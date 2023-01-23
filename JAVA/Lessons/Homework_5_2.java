@@ -5,7 +5,7 @@ public class Speed {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
       
-        System.out.println("Введите 5 любых символов на клавитуре: ");
+        System.out.println("Введите 5 любых символов на клавиатуре: ");
       
         int symbol_1 = (br.read());
         int symbol_2 = (br.read());
