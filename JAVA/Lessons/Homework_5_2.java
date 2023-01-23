@@ -1,7 +1,7 @@
 //Написать программу, которая считывает с клавиатуры пять символов и выводит их коды.
 
 import java.io.*;
-public class Speed {
+public class Homework_5_2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
       
