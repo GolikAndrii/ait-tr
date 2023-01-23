@@ -1,3 +1,5 @@
+//Обновить программу для вычисления площади прямоугольника. Добавить вывод единиц измерения через символ Unicode.
+
 import java.io.*;
 public class MyClass {
     public static void main(String args[]) throws IOException {
