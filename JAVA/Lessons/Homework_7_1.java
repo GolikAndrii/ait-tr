@@ -13,12 +13,12 @@ public class Homework_7_1{
         char firstElement = text.charAt(0);
         char lastElement = text.charAt(textLength-1);
 
-        System.out.printf("Первый симовл - '%s'%n", firstElement);
+        System.out.printf("Первый символ - '%s'%n", firstElement);
         System.out.printf("Последний символ - '%s'%n", lastElement);
     }
 }
 
 //  Введите любой текст: I want to be FullStack Developer!
 //  В данной строке всего символов: 33
-//  Первый симовл - 'I'
+//  Первый символ - 'I'
 //  Последний символ - '!'
