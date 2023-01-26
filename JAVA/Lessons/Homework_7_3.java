@@ -16,19 +16,19 @@ public class Homework_7_3 {
         System.out.println("");
         System.out.println("Вот коды данных символов: ");
         System.out.println("_____________________________");
-        System.out.printf("Символу '%s' соответствует код: %s%n", (char)symbol_1, symbol_1);
-        System.out.printf("Символу '%s' соответствует код: %s%n", (char)symbol_2, symbol_2);
-        System.out.printf("Символу '%s' соответствует код: %s%n", (char)symbol_3, symbol_3);
-        System.out.printf("Символу '%s' соответствует код: %s%n", (char)symbol_4, symbol_4);
-        System.out.printf("Символу '%s' соответствует код: %s%n", (char)symbol_5, symbol_5);
+        System.out.printf("Символу '%c' соответствует код: %s%n", symbol_1, symbol_1);
+        System.out.printf("Символу '%c' соответствует код: %s%n", symbol_2, symbol_2);
+        System.out.printf("Символу '%c' соответствует код: %s%n", symbol_3, symbol_3);
+        System.out.printf("Символу '%c' соответствует код: %s%n", symbol_4, symbol_4);
+        System.out.printf("Символу '%c' соответствует код: %s%n", symbol_5, symbol_5);
 
     }
 }
 
-//  Введите 5 любых символов на клавиатуре: 
+//  Введите 5 любых символов на клавиатуре:
 //  ^~(_=
 //
-//  Вот коды данных символов: 
+//  Вот коды данных символов:
 //  _____________________________
 //  Символу '^' соответствует код: 94
 //  Символу '~' соответствует код: 126
