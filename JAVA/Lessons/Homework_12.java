@@ -1,6 +1,9 @@
 import java.io.*;
 
 public class Homework_12 {
+    final public static String YELLOW = "желтый";
+    final public static String RED = "красный";
+    final public static String BLUE = "синий";
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -22,23 +25,29 @@ public class Homework_12 {
         {
             System.out.println("При смешении этих цветов получится ФИОЛЕТОВЫЙ цвет");
         }
-        
+
         else if ((firstColor.equalsIgnoreCase("красный") && (secondColor.equalsIgnoreCase("желтый")))
                 ||
                 (firstColor.equalsIgnoreCase("желтый") && (secondColor.equalsIgnoreCase("красный"))))
         {
             System.out.println("При смешении этих цветов получится ОРАНЖЕВЫЙ цвет");
         }
-        
+
         else if  ((firstColor.equalsIgnoreCase("синий") && (secondColor.equalsIgnoreCase("желтый")))
                 ||
                 (firstColor.equalsIgnoreCase("желтый") && (secondColor.equalsIgnoreCase("синий"))))
         {
             System.out.println("При смешении этих цветов получится ЗЕЛЕНЫЙ цвет");
         }
+
+        else if (firstColor.equals("красный") || firstColor.equals("синий") || firstColor.equals("желтый"))
+        {
+            System.out.printf("При смешении этих цветов получится %s цвет", firstColor.toUpperCase());
+
+        } 
         
         else {
-            System.out.println("Вы ввели некоректное значение. Начните сначала ;-)");
+            System.out.println("Вы ввели некорректное значение. Начните сначала ;-)");
         }
     }
 }
