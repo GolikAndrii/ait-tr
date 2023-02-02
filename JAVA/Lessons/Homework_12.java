@@ -1,14 +1,9 @@
 import java.io.*;
 
 public class Homework_12 {
-    final public static String YELLOW = "желтый";
-    final public static String RED = "красный";
-    final public static String BLUE = "синий";
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        String red = "красный";
 
         System.out.println("Выберите 2 любых цвета из следующих: красный, синий или желтый: ");
         System.out.println("Введите 2 любых цвета через пробел: ");
