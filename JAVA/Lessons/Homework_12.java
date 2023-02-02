@@ -15,32 +15,32 @@ public class Homework_12 {
         String secondColor = source.substring(space+1);
 
         if  ((firstColor.equalsIgnoreCase("красный") && (secondColor.equalsIgnoreCase("синий")))
-            ||
-            (firstColor.equalsIgnoreCase("синий") && (secondColor.equalsIgnoreCase("красный"))))
+                ||
+                (firstColor.equalsIgnoreCase("синий") && (secondColor.equalsIgnoreCase("красный"))))
         {
-            System.out.println("При смешении этих цветов получится ФИОЛЕТОВЫЙ цвет");
+            System.out.println("При смешивании этих цветов получится ФИОЛЕТОВЫЙ цвет");
         }
 
         else if ((firstColor.equalsIgnoreCase("красный") && (secondColor.equalsIgnoreCase("желтый")))
                 ||
                 (firstColor.equalsIgnoreCase("желтый") && (secondColor.equalsIgnoreCase("красный"))))
         {
-            System.out.println("При смешении этих цветов получится ОРАНЖЕВЫЙ цвет");
+            System.out.println("При смешивании этих цветов получится ОРАНЖЕВЫЙ цвет");
         }
 
         else if  ((firstColor.equalsIgnoreCase("синий") && (secondColor.equalsIgnoreCase("желтый")))
                 ||
                 (firstColor.equalsIgnoreCase("желтый") && (secondColor.equalsIgnoreCase("синий"))))
         {
-            System.out.println("При смешении этих цветов получится ЗЕЛЕНЫЙ цвет");
+            System.out.println("При смешивании этих цветов получится ЗЕЛЕНЫЙ цвет");
         }
 
         else if (firstColor.equals("красный") || firstColor.equals("синий") || firstColor.equals("желтый"))
         {
-            System.out.printf("При смешении этих цветов получится %s цвет", firstColor.toUpperCase());
+            System.out.printf("При смешивании этих цветов получится %s цвет", firstColor.toUpperCase());
 
-        } 
-        
+        }
+
         else {
             System.out.println("Вы ввели некорректное значение. Начните сначала ;-)");
         }
