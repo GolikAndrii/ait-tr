@@ -1,17 +1,16 @@
+// p=m*g
 import java.io.*;
 
-public class Homework_18_1 {
+public class Homework_18_2 {
     public static void main(String[] args) throws IOException {
+        final double GRAVITY  = 0.17;
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        String string = br.readLine();
-        int number = Integer.parseInt(br.readLine());
-
-        repeatLine(string, number);
+        int weight = Integer.parseInt(br.readLine());
+        getWeight(weight, GRAVITY);
     }
-    public static void repeatLine (String string, int number){
-        for (int i = 0; i<number; ++i){
-            System.out.print(string + " ");
-        }
+    public static void getWeight (int weight, double gravity){
+        System.out.printf("%.2f", weight * gravity);
     }
 }
