@@ -1,0 +1,79 @@
+package Project_27;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Map;
+
+import static Project_27.Project_27_index2.getRecord;
+
+public class Project_27_FindMethods {
+  public static String[] findNamePart(String namePart, Map<Integer, String> newItemName, Map<Integer,
+          String> newItemPhone, Map<Integer, String> newItemAddress) throws IOException {
+    BufferedReader br = new BufferedReader(new BufferedReader(new InputStreamReader(System.in)));
+    int count = 0;
+    int retIndex = 0;
+
+    for (Integer indexInSet : newItemName.keySet()) {
+      String second = newItemName.get(indexInSet);
+      if (second.toLowerCase().contains(namePart.toLowerCase())) {
+        String[] record = getRecord(indexInSet, newItemName, newItemPhone, newItemAddress );
+        System.out.printf("№ %6d Фамилия: %16s, адрес: %15s%n", indexInSet, record[0], record[1]);
+        ++count;
+        retIndex = indexInSet;
+      }
+    }
+    if (count == 1) {
+      String[] record = getRecord(retIndex, newItemName, newItemPhone, newItemAddress);
+      return record;
+    } else if (count > 1) {
+      System.out.print("Введите индекс: ");
+      int indexFinal = Integer.parseInt(br.readLine());
+      if (newItemName.containsKey(indexFinal)) {
+        String[] record = getRecord(indexFinal, newItemName, newItemPhone, newItemAddress);
+        return record;
+      } else {
+        String[] retValue = {"", "", ""};
+        return retValue;
+      }
+
+    }
+    System.out.println("Не найдено такой фамилии");
+    String[] retValue = {"", "", ""};
+    return retValue;
+  }
+  public static String[] findAddressPart(String addressPart, Map<Integer,
+          String> newItemName, Map<Integer, String> newItemPhone, Map<Integer,
+          String> newItemAddress) throws IOException {
+    BufferedReader br = new BufferedReader(new BufferedReader(new InputStreamReader(System.in)));
+    int count = 0;
+    int retIndex = 0;
+    for (Integer indexInSet : newItemAddress.keySet()) {
+      String second = newItemAddress.get(indexInSet);
+      if (second.toLowerCase().contains(addressPart.toLowerCase())) {
+        String[] record = getRecord(indexInSet, newItemName, newItemPhone, newItemAddress);
+        System.out.printf("№ %6d Фамилия: %16s, адрес: %15s%n", indexInSet, record[0], record[1]);
+        ++count;
+        retIndex = indexInSet;
+      }
+    }
+    if (count == 1) {
+      String[] record = getRecord(retIndex, newItemName, newItemPhone, newItemAddress); //name[0] address[1] phone[2]
+//            System.out.printf("Фамилия: %16s, адрес: %15s, телефон: %12s%n", record[0], record[1], record[2]);
+      return record;
+    } else if (count > 1) {
+      System.out.print("Введите индекс: ");
+      int indexFinal = Integer.parseInt(br.readLine());
+      if (newItemName.containsKey(indexFinal)) {
+        String[] record = getRecord(indexFinal, newItemName, newItemPhone, newItemAddress);
+        return record;
+      } else {
+        String[] retValue = {"", "", ""};
+        return retValue;
+      }
+    }
+    System.out.println("Не найдено такого адреса");
+    String[] retValue = {"", "", ""};
+    return retValue;
+  }
+}
