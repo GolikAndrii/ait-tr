@@ -1,3 +1,4 @@
+/*
 import java.io.*;
 import java.text.*;
 import java.time.*;
@@ -39,3 +40,4 @@ public class Homework_3 {
         System.out.println("И помните, "+ name + ", что жизнь одна - цените её!");
     }
 }
+*/

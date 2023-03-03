@@ -3,7 +3,7 @@
 // "Мне ... лет"
 // "Я из ..."
 // На месте многоточий должны использоваться переменные!
-
+/*
 package lesson_02;
 
 public class Variables {
@@ -17,4 +17,4 @@ public class Variables {
         System.out.println("I'm " + age + " years old.");
         System.out.println("I'm from " + country + ".");
     }
-}
+}*/

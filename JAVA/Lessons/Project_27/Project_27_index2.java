@@ -1,3 +1,4 @@
+/*
 package Project_27;
 
 import java.io.BufferedReader;
@@ -76,3 +77,4 @@ public class Project_27_index2 {
   }
 
 }
+*/
