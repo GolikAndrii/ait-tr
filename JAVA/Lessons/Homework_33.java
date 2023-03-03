@@ -12,7 +12,20 @@ public class Homework_33 {
         WINTER,
     }
 
-
+    enum Month {
+        JANUARY,
+        FEBRUARY,
+        MARCH,
+        APRIL,
+        MAY,
+        JUNE,
+        JULY,
+        AUGUST,
+        SEPTEMBER,
+        OCTOBER,
+        NOVEMBER,
+        DECEMBER,
+    }
 
     public static void main(String[] args) {
 
